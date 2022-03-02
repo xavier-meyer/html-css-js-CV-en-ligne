@@ -11,32 +11,32 @@
 <body>
     <header>
         <div>
-            <h1 class="text-center">Xavier Meyer</h1>   
-            <p id="p-titre" class="text-center">Développeur web front-end</p>      
+            <h1 class="text-center my-2 light-color">Xavier Meyer</h1>   
+            <p id="p-titre" class="text-center light-color">Développeur web front-end</p>      
         </div>   
         <div>
-            <p id="slogan" class="text-center">L'imagination n'a pas de limite, comme l'espace.</p>
+            <p id="slogan" class="text-center light-color">L'imagination n'a pas de limite, comme l'espace.</p>
         </div> 
     </header>
     <main>
         <section>
             <div class="row justify-content-center mx-0">
-                <div class="col-10 col-md-3 text-align-justify">
-                    <h2>Coordonnées:</h2>
-                    <ul>
+                <div class="col-10 col-md-3 text-align-justify">       
+                    <h2 class="light-color">Coordonnées:</h2>
+                    <ul class="light-color">
                         <li><img src="./images/icones/phone.png"class="icons my-2">0784199080</li>
                         <li><img src="./images/icones/email.png" class="icons my-2" >xavier.01@orange.fr</li>   
-                        <li><img src="./images/icones/adress.png" class="icons my-2">174CheminduMilieu<br>01700Miribel</li>   
+                        <li><img src="./images/icones/adress.png" class="icons my-2">174 Chemin du Milieu<br>01700 Miribel</li>   
                         <li><img src="./images/icones/car.png" class="icons my-2">Permis B/véhiculé</li>
                     </ul>
                 </div>
-                <div class="col-10 col-md-3 offset-md-1 text-align-justify">
-                    <h2>Profil professionnel:</h2>
-                    <p>Actuellement en formation découverte des techniques de base en informatique, je suis à la recherche d'un stage de développeur front-end qui se déroulera du 31 mars 2022 au 13 avril 2022.</p>
+                <div class="col-10 col-md-3 offset-md-1">
+                    <h2 class="light-color">Profil professionnel:</h2>
+                    <p class="light-color">Actuellement en formation découverte des techniques de base en informatique, je suis à la recherche d'un stage de développeur front-end qui se déroulera du 31 mars 2022 au 13 avril 2022.</p>
                 </div>
                 <div class="col-10 col-md-3 offset-md-1 text-align-justify"> 
-                    <h2>Consignes de jeu:</h2>
-                    <ul>
+                    <h2 class="light-color">Consignes de jeu:</h2>
+                    <ul class="light-color">
                         <li><img src="./images/icones/rocket.png"class="icons my-2">Sélectionnez l'astronaute avec la souris.</li>
                         <li><img src="./images/icones/rocket.png"class="icons my-2">Faites avancer horizontalement le personnage en dessous de la section que vous souhaitez consulter.</li>
                         <li><img src="./images/icones/rocket.png"class="icons my-2">Faites tirer une balle à l'astronaute sur la section désirée pour dévoiler son contenu.</li>
@@ -44,8 +44,141 @@
                 </div>     
             </div>  
         </section>
-    </main>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+        <section class="margin-p">
+            <div class="d-flex justify-content-around mx-0">
+                <div>
+                    <!-- Button modal Formation -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formationModal">
+                        Formation
+                    </button>
+                    <!-- Modalformation -->
+                    <div class="modal fade" id="formationModal" tabindex="-1" aria-labelledby="formationModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="formationModalLabel">Formation</h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h4><img src="./images/icones/rocket-1.png"class="icons-1 my-2">Découverte technique de base en informatique</h3>
+                                    <p>Onlineformapro Beynost de décembre 2021 à avril 2022:</p>
+                                    <ul>
+                                        <li><img src="./images/icones/star.png"class="icons my-2">découvrir les métiers du digital, du codage.</li>
+                                        <li><img src="./images/icones/star.png"class="icons my-2">acquérir de la culture informatique.</li>
+                                        <li><img src="./images/icones/star.png"class="icons my-2">accomplir un projet collaboratif.</li>
+                                    </ul>
+                                    <br>
+                                    <h4><img src="./images/icones/rocket-1.png"class="icons-1 my-2">Openclassrooms</h4>
+                                    <p>autoformation en 2019:</p>
+                                    <ul>
+                                        <li><img src="./images/icones/star.png"class="icons my-2">découverte de HTML,CSS,JAVASCRIPT</li>
+                                    </ul>
+                                    <br>
+                                    <h4><img src="./images/icones/rocket-1.png"class="icons-1 my-2">BTS Mécanique et Automatismes Industriels</h4>
+                                    <ul>
+                                        <li><img src="./images/icones/star.png"class="icons my-2">obtenu en 2012 à Ambérieu en Bugey</li>
+                                    </ul>
+                                    <br>
+                                    <h4><img src="./images/icones/rocket-1.png"class="icons-1 my-2">Bac S option sciences de l'ingénieur</h4>
+                                    <ul>
+                                        <li><img src="./images/icones/star.png"class="icons my-2">obtenu en 2010 à Ambérieu en Bugey</li>
+                                    </ul>   
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#competencesModal">
+                                        Compétences
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#experiencesModal">
+                                        Expériences
+                                    </button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                <!-- Button modal Compétences  -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#competencesModal">
+                    Compétences
+                    </button>
+                <!-- ModalCompétences -->
+                <div class="modal fade" id="competencesModal" tabindex="-1" aria-labelledby="competencesModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="competencesModalLabel">Expériences</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">    
+                                <h3><img src="./images/icones/rocket-1.png"class="icons-1 my-2">Expériences</h3>
+                                <ul>
+                                    <li><img src="./images/icones/star.png"class="icons my-2">HTML</li>
+                                    <li><img src="./images/icones/star.png"class="icons my-2">CSS,BOOTSTRAP</li>
+                                    <li><img src="./images/icones/star.png"class="icons my-2">JAVASCRIPT</li>
+                                    <li><img src="./images/icones/star.png"class="icons my-2">WORDPRESS</li>
+                                    <li><img src="./images/icones/star.png"class="icons my-2">GITHUB</li>
+                                    <li><img src="./images/icones/star.png"class="icons my-2">Protocoles FTP,SSD</li>    
+                                </ul>
+                            </div>  
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formationModal">
+                                    Formation
+                                </button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#experiencesModal">
+                                    Expériences
+                                </button>    
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                 <!-- Button modal Expériences  -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#experiencesModal">
+                    Expériences
+                </button> 
+                <!-- Modalexpériences -->
+                <div class="modal fade" id="experiencesModal" tabindex="-1" aria-labelledby="experiencesModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="experiencesModalLabel">Expériences</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">    
+                                <h3><img src="./images/icones/rocket-1.png"class="icons-1 my-2">Développeur web</h3>
+                                <p>House of Code,Lyon 2019:<br>
+                                semaine de projet: création d'une application mobile</p>
+                                <ul>
+                                    <li><img src="./images/icones/star.png"class="icons my-2">Réflexion, choix d'un théme avec lean-canvas.</li>
+                                    <li><img src="./images/icones/star.png"class="icons my-2">Répartition tâches entre mock-up, business-plan et plan marketing.</li>
+                                    <li><img src="./images/icones/star.png"class="icons my-2">Travail sur le business-plan comment rentabiliser l'appli sur le long terme.</li>
+                                </ul>
+                                <h3><img src="./images/icones/rocket-1.png"class="icons-1 my-2">Missions intérim industrie et agriculture</h3>
+                                <p>2013 à 2018:</p>
+                                <ul>
+                                    <li><img src="./images/icones/star.png"class="icons my-2">Aide-mécanicien maintenance,EMMI pour Toray Film Plastic,Beynost</li>
+                                    <li><img src="./images/icones/star.png"class="icons my-2">Opérateur polyvalent atelier, Le Fumet des Dombes, St André de Corcy.</li>
+                                </ul>
+                                <h3><img src="./images/icones/rocket-1.png"class="icons-1 my-2">Stages dans le cadre du BTS</h3>
+                                <p>2010 à 2011:</p>
+                                <ul>
+                                    <li><img src="./images/icones/star.png"class="icons my-2">Automaticien chez ELECTRICFIL AUTOMOTIVE à saint Maurice de Beynost pendant 2 semaines.</li>
+                                    <li><img src="./images/icones/star.png"class="icons my-2">Usineur plastiques chez DORLON SAS USINAGES PLASTIQUES à Miribel.</li>
+                                </ul>
+                            </div> 
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formationModal">
+                                    Formation
+                                </button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#competencesModal">
+                                    Compétences
+                                </button>
+                            </div>   
+                        </div>        
+                    </div>
+                </div>
+            </div>            
+        </section>
+    </main>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="./app.js" type="text/javascript"></script>
 </body>
 </html> 
