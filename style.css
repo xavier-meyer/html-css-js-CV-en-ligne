@@ -32,7 +32,21 @@ main img.icons-1{
     object-fit: cover;
     margin-right: 10px;
 }
-
+/*section 3*/
+/*zoom des aperçu images*/
+.image {
+    width: 100%;
+    border-radius: 5px;
+    height: 200px;
+    object-fit: contain;
+}
+.image img {
+/* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+transition: all 1s ease; 
+}
+.image:hover img{
+    transform: scale(1.1);
+}
 /*class perso*/
 .text-align-justify{
     text-align: justify;
@@ -42,4 +56,16 @@ main img.icons-1{
 }
 .light-color{
 color: var(--bs-body-bg);
+}
+.fwbold{
+    font-weight: bold;
+}
+.padding15{
+    padding: 15px;
+}
+.border{
+    border: 4px solid black;
+}
+.d-inline-block{
+    display: inline-block;
 }
