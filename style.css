@@ -27,8 +27,8 @@ main img.icons{
 }
 /*section2*/
 main img.icons-1{
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     object-fit: cover;
     margin-right: 10px;
 }
@@ -37,7 +37,7 @@ main img.icons-1{
 .image {
     width: 100%;
     border-radius: 5px;
-    height: 200px;
+    height: auto;
     object-fit: contain;
 }
 .image img {
@@ -63,9 +63,19 @@ color: var(--bs-body-bg);
 .padding15{
     padding: 15px;
 }
+.padding10{
+    padding: 10px;
+}
 .border{
     border: 4px solid black;
 }
-.d-inline-block{
-    display: inline-block;
+.pos-relative{
+    position: relative;
 }
+.pos-absolute{
+    position:absolute;
+}
+.align-justify{
+    text-align: justify;
+}
+

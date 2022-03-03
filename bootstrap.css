@@ -5379,6 +5379,9 @@ textarea.form-control-lg {
   border: 0;
   border-radius: 0.25rem;
   opacity: 0.5;
+  position: absolute;
+  right:1.5%;
+  top:15px;
 }
 .btn-close:hover {
   color: #000;
@@ -5537,11 +5540,12 @@ textarea.form-control-lg {
   display: flex;
   flex-shrink: 0;
   align-items: center;
-  justify-content: space-between;
+  justify-content:center;
   padding: 1rem 1rem;
   border-bottom: 1px solid #dee2e6;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
+  position: relative;
 }
 .modal-header .btn-close {
   padding: 0.5rem 0.5rem;
@@ -6244,9 +6248,9 @@ textarea.form-control-lg {
   }
 }
 .offcanvas {
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  z-index: 1045;
+  z-index: 1065;
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -6266,7 +6270,7 @@ textarea.form-control-lg {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1040;
+  z-index: 1060;
   width: 100vw;
   height: 100vh;
   background-color: #000;
@@ -6313,7 +6317,7 @@ textarea.form-control-lg {
 .offcanvas-end {
   top: 0;
   right: 0;
-  width: 400px;
+  width: 50%;
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   transform: translateX(100%);
 }
