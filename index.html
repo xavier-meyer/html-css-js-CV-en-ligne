@@ -48,7 +48,7 @@
             <div class="d-flex justify-content-around mx-0">
                 <div>
                     <!-- Button modal Formation -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formationModal">
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#formationModal">
                         Formation
                     </button>
                     <!-- Modalformation -->
@@ -96,15 +96,18 @@
                                         </div>     
                                     </div>          
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#competencesModal">
+                                <div class="modal-footer d-flex justify-content-around">
+                                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#competencesModal">
                                         Compétences
                                     </button>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#experiencesModal">
+                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#experiencesModal">
                                         Expériences
                                     </button> 
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#portfolioModal">
                                         Portfolio
+                                    </button>
+                                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                        Me contacter
                                     </button>
                                 </div>
                             </div>
@@ -112,12 +115,12 @@
                     </div>
                 </div>   
                 <!-- Button modal Compétences  -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#competencesModal">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#competencesModal">
                     Compétences
                     </button>
                 <!-- ModalCompétences -->
                 <div class="modal fade" id="competencesModal" tabindex="-1" aria-labelledby="competencesModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog w-40">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h2 class="modal-title" id="competencesModalLabel">Compétences</h2>
@@ -138,22 +141,25 @@
                                     </div>     
                                 </div>          
                             </div>  
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formationModal">
+                            <div class="modal-footer d-flex justify-content-around">
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#formationModal">
                                     Formation
                                 </button>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#experiencesModal">
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#experiencesModal">
                                     Expériences
-                                </button>  
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                                </button> 
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#portfolioModal">
                                     Portfolio
-                                </button>  
+                                </button>
+                                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                    Me contacter
+                                </button>
                             </div> 
                         </div>
                     </div>
                 </div>
                  <!-- Button modal Expériences  -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#experiencesModal">
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#experiencesModal">
                     Expériences
                 </button> 
                 <!-- Modalexpériences -->
@@ -200,15 +206,18 @@
                                     </div>     
                                 </div>   
                             </div>   
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formationModal">
+                            <div class="modal-footer d-flex justify-content-around">
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#formationModal">
                                     Formation
                                 </button>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#competencesModal">
+                                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#competencesModal">
                                     Compétences
                                 </button>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#portfolioModal">
                                     Portfolio
+                                </button>
+                                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                    Me contacter
                                 </button>
                             </div>   
                         </div>        
@@ -217,9 +226,9 @@
             </div>            
         </section>
         <section class="margin-p">
-            <div class="d-flex justify-content-center mx-0">
+            <div class="d-flex justify-content-around mx-0">
                 <!-- Button modal Portfolio -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#portfolioModal">
                     Portfolio
                 </button>
                 <!-- ModalPortfolio -->
@@ -264,16 +273,76 @@
                                     <h3 class="text-center fwbold padding15">Jeu des différences</h3>   
                                     <div class="image">
                                         <img class="image" src="./images/imgs-portfolio/js  jeu differences.png" alt="aperçu du projet Js jeu des différences">
-                                    </div>       
+                                    </div> 
+                                    <button class="btn btn-primary d-flex justify-content-center my-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJeuNombre" aria-controls="offcanvasJeuNombre">
+                                        En savoir plus
+                                    </button>        
                                 </div> 
-                                <button class="btn btn-primary d-flex justify-content-center my-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJeuNombre" aria-controls="offcanvasJeuNombre">
-                                    En savoir plus
-                                </button>  
-                            </div>       
+                            </div>  
+                            <div class="modal-footer d-flex justify-content-around">
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#formationModal">
+                                    Formation
+                                </button>
+                                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#competencesModal">
+                                    Compétences
+                                </button>
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                                    Portfolio
+                                </button>
+                                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                    Me contacter
+                                </button>
+                            </div>        
                         </div>
                     </div> 
                 </div>  
-                <!-- offcanvas  -->
+                <!--modal me contacter-->
+                <!-- Button modal Me contacter -->
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#contactModal">
+                    Me découvrir
+                </button>
+                <!-- ModalContact -->
+                <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+                    <div class="modal-dialog w-40">  
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title" id="contactModalLabel">Me retrouver</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body d-flex justify-content-center">    
+                                <div class="card col-10 col-xl-4">
+                                    <div class="card-body">
+                                        <h3><img src="./images/icones/rocket-1.png"class="icons-1 my-2 card-title padding10">Mes Coordonnées</h3> 
+                                        <h4 class="card-subtitle mb-2 my-3 text-muted align-justify"></h4>
+                                        <ul class="card-text">
+                                            <li><img src="./images/icones/phone-1.png"class="icons my-2">0784199080</li>
+                                            <li><img src="./images/icones/email-1.png"class="icons my-2">xavier.01@orange.fr</li>
+                                            <li><img src="./images/icones/adress-1.png"class="icons my-2">174 Chemin du Milieu<br>01700 Miribel</li>
+                                            <li><img src="./images/icones/car-1.png"class="icons my-2">Permis B/véhiculé</li>
+                                        </ul>
+                                        <h4 class="card-subtitle mb-2 my-3 text-muted padding10 text-center"></h4>
+                                        <a href="#" class="card-link"></a>
+                                    </div>     
+                                </div>          
+                            </div>
+                            <div class="modal-footer d-flex justify-content-around">
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#formationModal">
+                                    Formation
+                                </button>
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#experiencesModal">
+                                    Expériences
+                                </button> 
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                                    Portfolio
+                                </button>
+                                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#competencesModal">
+                                    Compétences
+                                </button>
+                            </div>   
+                        </div>     
+                    </div>                
+                </div>                
+                <!-- offcanvas jeu nombre  -->
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasJeuNombre" aria-labelledby="offcanvasJeuNombreLabel">
                     <div class="offcanvas-header">
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
