@@ -123,15 +123,20 @@
                                 <h2 class="modal-title" id="competencesModalLabel">Compétences</h2>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">    
-                                <ul>
-                                    <li><img src="./images/icones/star.png"class="icons my-2">HTML</li>
-                                    <li><img src="./images/icones/star.png"class="icons my-2">CSS,BOOTSTRAP</li>
-                                    <li><img src="./images/icones/star.png"class="icons my-2">JAVASCRIPT</li>
-                                    <li><img src="./images/icones/star.png"class="icons my-2">WORDPRESS</li>
-                                    <li><img src="./images/icones/star.png"class="icons my-2">GITHUB</li>
-                                    <li><img src="./images/icones/star.png"class="icons my-2">Protocoles FTP,SSD</li>    
-                                </ul>
+                            <div class="modal-body d-flex justify-content-center">    
+                                <div class="card col-10 col-xl-3">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li><img src="./images/icones/star.png"class="icons my-2">HTML</li>
+                                            <li><img src="./images/icones/star.png"class="icons my-2">CSS</li>
+                                            <li><img src="./images/icones/star.png"class="icons my-2">BOOTSTRAP</li>
+                                            <li><img src="./images/icones/star.png"class="icons my-2">JAVASCRIPT</li>
+                                            <li><img src="./images/icones/star.png"class="icons my-2">WORDPRESS</li>
+                                            <li><img src="./images/icones/star.png"class="icons my-2">GITHUB</li>
+                                            <li><img src="./images/icones/star.png"class="icons my-2">Protocoles FTP,SSD</li>    
+                                        </ul>
+                                    </div>     
+                                </div>          
                             </div>  
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formationModal">
@@ -174,7 +179,7 @@
                                 </div>    
                                 <div class="card col-10 col-xl-3">
                                     <div class="card-body">
-                                        <h3><img src="./images/icones/rocket-1.png"class="icons-1 my-2 card-title padding10">Missions intérim industrie et agriculture,Beynost</h3> 
+                                        <h3><img src="./images/icones/rocket-1.png"class="icons-1 my-2 card-title padding10">Missions intérim industrie et agriculture<br>Beynost</h3> 
                                         <h4 class="card-subtitle mb-2 text-muted padding10">2013 à 2018:</h4>
                                         <ul class="card-text">
                                             <li><img src="./images/icones/star.png"class="icons my-2">Aide-mécanicien maintenance,EMMI pour Toray Film Plastic,.</li>
@@ -218,11 +223,9 @@
                     Portfolio
                 </button>
                 <!-- ModalPortfolio -->
-                <!-- à mon avis faut mettre modal en position : relative -->
-                <!-- puis que ton offcanvas soit un ENFANT de la modal et qu'il soit en position : absolute -->
                 <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
-                    <div class="modal-dialog pos-relative">
-                        <div class="modal-content">
+                    <div class="modal-dialog">
+                        <div class="modal-content"  id="modal-portfolio-content">
                             <div class="modal-header">
                                 <h3 class="modal-title" id="portfolioModalLabel">Portfolio</h3>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -233,7 +236,7 @@
                                     <div class="image pos-relative">
                                         <img class="image"src="./images/imgs-portfolio/js trouver le nombre.png" alt="aperçu du projet Js trouver le nombre">
                                     </div>
-                                    <button class="btn btn-primary d-flex justify-content-center my-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJeuNombre" aria-controls="offcanvasJeuNombre">
+                                    <button class="btn btn-primary d-flex justify-content-center my-4 en-savoir-plus-droite" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJeuNombre" aria-controls="offcanvasJeuNombre">
                                         En savoir plus
                                     </button>   
                                 </div>  
@@ -241,15 +244,21 @@
                                     <h3 class="text-center fwbold padding15">Site SPA agriculteur</h3>
                                     <div class="image">
                                         <img class="image" src="./images/imgs-portfolio/site internet SPA agriculteur.png" alt="aperçu du projet site internet SPA agriculteur">
-                                    </div>         
+                                    </div>     
+                                    <button class="btn btn-primary d-flex justify-content-center my-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJeuNombre" aria-controls="offcanvasJeuNombre">
+                                        En savoir plus
+                                    </button>      
                                 </div>    
                             </div> 
-                            <div class="modal-body justify-content-around align-items-center row mx-0">
+                            <div class="modal-body justify-content-around row mx-0">
                                 <div class="col-4">
                                     <h3 class="text-center fwbold padding15">Jeu de la calculatrice</h3>   
                                     <div class="image">
                                         <img class="image" src="./images/imgs-portfolio/js calculatrice.png" alt="aperçu du projet Js jeu de la calculatrice">
-                                    </div>       
+                                    </div>  
+                                    <button class="btn btn-primary d-flex justify-content-center my-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJeuCalculatrice" aria-controls="offcanvasJeuCalculatrice">
+                                        En savoir plus
+                                    </button>      
                                 </div> 
                                 <div class="col-4">
                                     <h3 class="text-center fwbold padding15">Jeu des différences</h3>   
@@ -257,37 +266,39 @@
                                         <img class="image" src="./images/imgs-portfolio/js  jeu differences.png" alt="aperçu du projet Js jeu des différences">
                                     </div>       
                                 </div> 
+                                <button class="btn btn-primary d-flex justify-content-center my-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJeuNombre" aria-controls="offcanvasJeuNombre">
+                                    En savoir plus
+                                </button>  
                             </div>       
-                        </div>  
-                        <!-- ici on va tester de mettre le offcanvas -->
-                        <!--offcanvas JeuNombre--> 
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasJeuNombre" aria-labelledby="offcanvasJeuNombreLabel">
-                            <div class="offcanvas-header">
-                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <div class="card">
-                                    <div class="card-body">
-                                    <h3 class="card-title fwbold my-2 text-center">Projet trouver le nombre</h3>
-                                    <h4 class="card-subtitle mb-2 my-3 text-muted align-justify">Créer un jeu visant à deviner un nombre prédéfinie avec l'appui d'une vidéo</h4>
-                                    <ul class="card-text">
-                                        <li><img src="./images/icones/star.png"class="icons my-2"></li>
-                                        <li><img src="./images/icones/star.png"class="icons my-2"></li>
-                                        <li><img src="./images/icones/star.png"class="icons my-2"></li>
-                                        <li><img src="./images/icones/star.png"class="icons my-2"></li>
-                                    </ul>
-                                    <h4 class="card-subtitle mb-2 my-3 text-muted padding10 text-center">Langages utilisées:</h4>
-                                    <div class="d-flex justify-content-around">
-                                        <button type="button" class="btn btn-primary">HTML</button>
-                                        <button type="button" class="btn btn-secondary">CSS</button>
-                                        <button type="button" class="btn btn-success">JS</button>
-                                    </div>
-                                    <a href="#" class="card-link"></a>
-                                </div>    
-                            </div>
-                        </div> 
+                        </div>
                     </div> 
-                </div>                   
+                </div>  
+                <!-- offcanvas  -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasJeuNombre" aria-labelledby="offcanvasJeuNombreLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="card">
+                            <div class="card-body">
+                            <h3 class="card-title fwbold my-2 text-center">Projet trouver le nombre</h3>
+                            <h4 class="card-subtitle mb-2 my-3 text-muted align-justify">Créer un jeu visant à deviner un nombre prédéfinie avec l'appui d'une vidéo</h4>
+                            <ul class="card-text">
+                                <li><img src="./images/icones/star.png"class="icons my-2"></li>
+                                <li><img src="./images/icones/star.png"class="icons my-2"></li>
+                                <li><img src="./images/icones/star.png"class="icons my-2"></li>
+                                <li><img src="./images/icones/star.png"class="icons my-2"></li>
+                            </ul>
+                            <h4 class="card-subtitle mb-2 my-3 text-muted padding10 text-center">Langages utilisées:</h4>
+                            <div class="d-flex justify-content-around">
+                                <button type="button" class="btn btn-primary">HTML</button>
+                                <button type="button" class="btn btn-secondary">CSS</button>
+                                <button type="button" class="btn btn-success">JS</button>
+                            </div>
+                            <a href="#" class="card-link"></a>
+                        </div>    
+                    </div>
+                </div>   
             </div>                
         </section>  
     </main>  

@@ -78,4 +78,10 @@ color: var(--bs-body-bg);
 .align-justify{
     text-align: justify;
 }
-
+/* media-queries perso*/
+/* @media(min-width: 576px){
+    .modal-dialog-competences{
+        max-width: 45%;
+        margin: 1.75rem auto;
+    }
+} */
