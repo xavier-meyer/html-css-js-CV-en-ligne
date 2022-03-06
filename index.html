@@ -56,6 +56,7 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
+                                    <img src="./images/icones/diplome.png" class="icons-1 my-3">
                                     <h2 class="modal-title" id="formationModalLabel">Formation</h2>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
@@ -123,6 +124,7 @@
                     <div class="modal-dialog w-40">
                         <div class="modal-content">
                             <div class="modal-header">
+                                <img src="./images/icones/competences.png" class="icons-1 my-3">
                                 <h2 class="modal-title" id="competencesModalLabel">Compétences</h2>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
@@ -130,13 +132,15 @@
                                 <div class="card col-10 col-xl-3">
                                     <div class="card-body">
                                         <ul>
-                                            <li><img src="./images/icones/star.png"class="icons my-2">HTML</li>
-                                            <li><img src="./images/icones/star.png"class="icons my-2">CSS</li>
-                                            <li><img src="./images/icones/star.png"class="icons my-2">BOOTSTRAP</li>
-                                            <li><img src="./images/icones/star.png"class="icons my-2">JAVASCRIPT</li>
-                                            <li><img src="./images/icones/star.png"class="icons my-2">WORDPRESS</li>
-                                            <li><img src="./images/icones/star.png"class="icons my-2">GITHUB</li>
-                                            <li><img src="./images/icones/star.png"class="icons my-2">Protocoles FTP,SSD</li>    
+                                            <li><img src="./images/icones/html.png"class="icons my-2">HTML</li>
+                                            <li><img src="./images/icones/css.png"class="icons my-2">CSS</li>
+                                            <li><img src="./images/icones/boostrap.png"class="icons my-2">BOOTSTRAP</li>
+                                            <li><img src="./images/icones/javascript.png"class="icons my-2">JAVASCRIPT</li>
+                                            <li><img src="./images/icones/wordpress.png"class="icons my-2">WORDPRESS</li>
+                                            <li><img src="./images/icones/github.png"class="icons my-2">GITHUB</li>
+                                            <li><img src="./images/icones/serveur-FTP.png"class="icons my-2">Déploiements serveur FTP</li>  
+                                            <li><img src="./images/icones/serveur-SSH.png"class="icons my-2">Déploiements serveur SSD</li>   
+                                            <li><img src="./images/icones/whimsical.png"class="icons my-2">Whimsical</li>  
                                         </ul>
                                     </div>     
                                 </div>          
@@ -167,6 +171,7 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
+                                <img src="./images/icones/experiences.png" class="icons-1 my-3">
                                 <h2 class="modal-title" id="experiencesModalLabel">Expériences</h3>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
@@ -236,13 +241,14 @@
                     <div class="modal-dialog">
                         <div class="modal-content"  id="modal-portfolio-content">
                             <div class="modal-header">
+                                <img src="./images/icones/portfolio.png" class="icons-1">
                                 <h3 class="modal-title" id="portfolioModalLabel">Portfolio</h3>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body justify-content-around row mx-0">
                                 <div class="col-4">
                                     <h2 class="text-center fwbold padding15">Jeu trouver le nombre</h2>
-                                    <div class="image pos-relative">
+                                    <div class="image">
                                         <img class="image"src="./images/imgs-portfolio/js trouver le nombre.png" alt="aperçu du projet Js trouver le nombre">
                                     </div>
                                     <button class="btn btn-primary d-flex justify-content-center my-4 en-savoir-plus-droite" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJeuNombre" aria-controls="offcanvasJeuNombre">
@@ -254,7 +260,7 @@
                                     <div class="image">
                                         <img class="image" src="./images/imgs-portfolio/site internet SPA agriculteur.png" alt="aperçu du projet site internet SPA agriculteur">
                                     </div>     
-                                    <button class="btn btn-primary d-flex justify-content-center my-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJeuNombre" aria-controls="offcanvasJeuNombre">
+                                    <button class="btn btn-primary d-flex justify-content-center en-savoir-plus-gauche mt-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSpaAgriculteur" aria-controls="offcanvasSpaAgriculteur">
                                         En savoir plus
                                     </button>      
                                 </div>    
@@ -274,7 +280,7 @@
                                     <div class="image">
                                         <img class="image" src="./images/imgs-portfolio/js  jeu differences.png" alt="aperçu du projet Js jeu des différences">
                                     </div> 
-                                    <button class="btn btn-primary d-flex justify-content-center my-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJeuNombre" aria-controls="offcanvasJeuNombre">
+                                    <button class="btn btn-primary d-flex justify-content-center my-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJeuDifferences" aria-controls="offcanvasJeuDifferences">
                                         En savoir plus
                                     </button>        
                                 </div> 
@@ -296,34 +302,60 @@
                         </div>
                     </div> 
                 </div>  
-                <!--modal me contacter-->
-                <!-- Button modal Me contacter -->
+                <!-- Button modal Me découvrir -->
                 <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#contactModal">
                     Me découvrir
                 </button>
                 <!-- ModalContact -->
                 <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-                    <div class="modal-dialog w-40">  
+                    <div class="modal-dialog">  
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h2 class="modal-title" id="contactModalLabel">Me retrouver</h2>
+                                <img src="./images/icones/satellite.png" class="icons-1 my-3">
+                                <h2 class="modal-title" id="contactModalLabel">Me découvrir</h2>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body d-flex justify-content-center">    
-                                <div class="card col-10 col-xl-4">
+                            <div class="modal-body d-flex justify-content-around">    
+                                <div class="card col-10 col-xl-3">
                                     <div class="card-body">
                                         <h3><img src="./images/icones/rocket-1.png"class="icons-1 my-2 card-title padding10">Mes Coordonnées</h3> 
-                                        <h4 class="card-subtitle mb-2 my-3 text-muted align-justify"></h4>
                                         <ul class="card-text">
                                             <li><img src="./images/icones/phone-1.png"class="icons my-2">0784199080</li>
                                             <li><img src="./images/icones/email-1.png"class="icons my-2">xavier.01@orange.fr</li>
                                             <li><img src="./images/icones/adress-1.png"class="icons my-2">174 Chemin du Milieu<br>01700 Miribel</li>
                                             <li><img src="./images/icones/car-1.png"class="icons my-2">Permis B/véhiculé</li>
                                         </ul>
-                                        <h4 class="card-subtitle mb-2 my-3 text-muted padding10 text-center"></h4>
-                                        <a href="#" class="card-link"></a>
-                                    </div>     
-                                </div>          
+                                    </div>    
+                                </div>   
+                                <div class="card col-10 col-xl-3">
+                                    <div class="card-body">
+                                        <h3><img src="./images/icones/rocket-1.png"class="icons-1 my-2 card-title padding10">Réseaux sociaux</h3> 
+                                        <ul class="card-text">
+                                            <li><img src="./images/icones/linkedin.png"class="icons my-2">profil en cours de création</li>
+                                            <li><img src="./images/icones/github.png"class="icons my-3"><a type="button" class="card-link btn btn-dark" href="https://github.com/xavier-meyer">Mon github</a></li>
+                                            <li><img src="./images/icones/cv.png"class="icons my-2">CV en cours de création</li>
+                                        </ul>
+                                    </div>    
+                                </div>        
+                                <div class="card col-10 col-xl-3">
+                                    <div class="card-body">
+                                        <h3><img src="./images/icones/rocket-1.png"class="icons-1 my-2 card-title padding10">Passions</h3> 
+                                        <ul class="card-text">
+                                            <h4><img src="./images/icones/game.png"class="icons my-2 text-center">Jeux-vidéos en ligne depuis 7ans:</h4>
+                                            <ul>
+                                                <li><img src="./images/icones/star.png"class="icons my-2">Appartenance à une alliance</li>
+                                                <li><img src="./images/icones/star.png"class="icons my-2">Cohésion de groupe</li>
+                                                <li><img src="./images/icones/star.png"class="icons my-2">Compréhension des mécanismes du jeu</li>
+                                            </ul>
+                                            <h4><img src="./images/icones/steam.png"class="icons my-2">Jeux-vidéos FPS open-world:</h4>
+                                            <ul>
+                                                <li><img src="./images/icones/star.png"class="icons my-2">Jeux à portée éducative, découverte historique ex: assassin creed</li>
+                                                <li><img src="./images/icones/star.png"class="icons my-2">Développement de réflexes</li>
+                                                <li><img src="./images/icones/star.png"class="icons my-2">Cohésion entre joueurs en mode coopératif</li>
+                                            </ul>
+                                        </ul>
+                                    </div>    
+                                </div>       
                             </div>
                             <div class="modal-footer d-flex justify-content-around">
                                 <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#formationModal">
@@ -351,24 +383,55 @@
                         <div class="card">
                             <div class="card-body">
                             <h3 class="card-title fwbold my-2 text-center">Projet trouver le nombre</h3>
-                            <h4 class="card-subtitle mb-2 my-3 text-muted align-justify">Créer un jeu visant à deviner un nombre prédéfinie avec l'appui d'une vidéo</h4>
+                            <h4 class="card-subtitle mb-2 my-3 text-muted align-justify">Créer un jeu visant à deviner un nombre prédéfinie avec l'appui d'une vidéo:</h4>
                             <ul class="card-text">
-                                <li><img src="./images/icones/star.png"class="icons my-2"></li>
-                                <li><img src="./images/icones/star.png"class="icons my-2"></li>
-                                <li><img src="./images/icones/star.png"class="icons my-2"></li>
-                                <li><img src="./images/icones/star.png"class="icons my-2"></li>
+                                <li><img src="./images/icones/star.png"class="icons my-2">Création de l'architecture du projet en HTML.</li>
+                                <li><img src="./images/icones/star.png"class="icons my-2">Réalisation du positionnement des élements en CSS.</li>
+                                <li><img src="./images/icones/star.png"class="icons my-2">Création des fonctions de base du jeu en JS.</li>
+                                <li><img src="./images/icones/star.png"class="icons my-2">Ajout de fonctions de jeux complémentaires en JS.</li>
                             </ul>
-                            <h4 class="card-subtitle mb-2 my-3 text-muted padding10 text-center">Langages utilisées:</h4>
+                            <h4 class="card-subtitle mb-2 my-3 text-muted padding15 text-center">Langages utilisées:</h4>
                             <div class="d-flex justify-content-around">
-                                <button type="button" class="btn btn-primary">HTML</button>
-                                <button type="button" class="btn btn-secondary">CSS</button>
-                                <button type="button" class="btn btn-success">JS</button>
+                                <h4><span class="badge bg-primary">HTML</span></h4>
+                                <h4><span class="badge bg-secondary">CSS</span></h4>
+                                <h4><span class="badge bg-success">JS</span></h4>
                             </div>
-                            <a href="#" class="card-link"></a>
+                            <h4 class="card-subtitle mb-2 my-3 text-muted padding15 text-center">Lien téléchargement github:</h4>
+                            <div class="d-flex justify-content-center"> 
+                                <a type="button"  class="card-link btn btn-dark" href="https://github.com/xavier-meyer/js-trouver-le-nombre">Projet trouver un nombre</a>
+                            </div>    
                         </div>    
                     </div>
                 </div>   
-            </div>                
+                <!-- offcanvas jeu de la calculatrice  -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasJeuCalculatrice" aria-labelledby="offcanvasJeuCalculatriceLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="card">
+                            <div class="card-body">
+                            <h3 class="card-title fwbold my-2 text-center">Projet jeu de la calculatrice</h3>
+                            <h4 class="card-subtitle mb-2 my-3 text-muted align-justify">Créer une calculatrice réalisant les 4 opérations de base:</h4>
+                            <ul class="card-text">
+                                <li><img src="./images/icones/star.png"class="icons my-2">Création de l'architecture du projet en HTML.</li>
+                                <li><img src="./images/icones/star.png"class="icons my-2">Déclaration des variables en JS.</li>
+                                <li><img src="./images/icones/star.png"class="icons my-2">Création des fonctions nombres en JS.</li>
+                                <li><img src="./images/icones/star.png"class="icons my-2">Création de la fonction calculatrice en JS.</li>
+                            </ul>
+                            <h4 class="card-subtitle mb-2 my-3 text-muted padding15 text-center">Langages utilisées:</h4>
+                            <div class="d-flex justify-content-around">
+                                <h4><span class="badge bg-primary">HTML</span></h4>
+                                <h4><span class="badge bg-success">JS</span></h4>
+                            </div>
+                            <h4 class="card-subtitle mb-2 my-3 text-muted padding15 text-center">Lien téléchargement github:</h4>
+                            <div class="d-flex justify-content-center"> 
+                                <a type="button"  class="card-link btn btn-dark" href="https://github.com/xavier-meyer/js-calculatrice">Projet jeu de la calculatrice</a>
+                            </div>    
+                        </div> 
+                    </div>        
+                </div>
+            </div>                    
         </section>  
     </main>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
