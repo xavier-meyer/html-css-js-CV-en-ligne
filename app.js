@@ -124,8 +124,10 @@ function Sprite(filename, left, top, width){
 function move(astronaut, ball){
     if(event.code == "ArrowLeft"){
         astronaut.left -= 15;
+        ball.left -= 15;
     }if(event.code == "ArrowRight"){
         astronaut.left += 15;
+        ball.left += 15;
     }if(event.code == "ArrowUp"){
        ball.top -= 15;
     }   
@@ -134,20 +136,23 @@ function move(astronaut, ball){
 function controleBorders(astronaut, ball){
     // on empeches l'astronaute de sortir à gauche    
     if(astronaut.left < 0){
-        astronaut.left = 30;
+        astronaut.left = 10;
+        ball.left = 35;
     // on empeches l'astronaute de sortir à  droite
     }if(astronaut.left > document.body.clientWidth-astronaut._node.width-25){
        astronaut.left = document.body.clientWidth-astronaut._node.width-25;
+       ball.left = document.body.clientWidth-astronaut._node.width;
     // on empeche la balle de sortir en haut 
     }if(ball.top < 0){
-      ball.top = 660;   
+      ball.top = 660;    
     }
 }   
 // function maitre avec appel fonctions
 document.onkeydown = function(event){
-    console.log(event.code);
+    // console.log(event.code);
     // fonction qui gére le déplacement d'un sprite passé en paramétre
     move(astronaut, ball);
+
     // fonction qui empeche un sprite passé en paramètre de sortir du body
     controleBorders(astronaut, ball);
 }
