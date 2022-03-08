@@ -81,3 +81,9 @@ color: var(--bs-body-bg);
 .w-40{
     width: 40%;
 }
+/*media-queries perso*/
+@media(max-width:392px){
+    main section h3.title-marge{
+        margin-right: 20px;
+    }
+}
