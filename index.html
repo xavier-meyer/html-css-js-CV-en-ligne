@@ -20,8 +20,8 @@
     </header>
     <main>
         <section>
-            <div class="row justify-content-center mx-0">
-                <div class="col-10 col-md-3 text-align-justify">       
+            <div class="row justify-content-around mx-0">
+                <div class="col-10 col-md-2 text-align-justify">       
                     <h2 class="light-color">Coordonnées:</h2>
                     <ul class="light-color">
                         <li><img src="./images/icones/phone.png"class="icons my-2">0784199080</li>
@@ -30,25 +30,33 @@
                         <li><img src="./images/icones/car.png" class="icons my-2">Permis B/vehiculé</li>
                     </ul>
                 </div>
-                <div class="col-10 col-md-3 offset-md-1">
+                <div class="col-10 col-md-3">
                     <h2 class="light-color">Profil professionnel:</h2>
-                    <p class="light-color">Actuellement en formation découverte des techniques de base en informatique, je suis à la recherche d'un stage de développeur front-end qui se déroulera du 31 mars 2022 au 13 avril 2022.</p>
+                    <p class="light-color">Actuellement en formation découverte des techniques de base en informatique, je suis passionné par le travail en front-end. j'apprécies travailler sur des logiciels tel que HTML, CSS et javascript pour la création la mise en page et pour rendre dynamique des sites internets.</p>
                 </div>
-                <div class="col-10 col-md-3 offset-md-1 text-align-justify"> 
-                    <h2 class="light-color">Consignes de jeu:</h2>
+                <div class="col-10 col-md-2"> 
+                    <h2 class="light-color">Possibilités de consulter mon cv:</h2>
                     <ul class="light-color">
+                        <h4 class="light-color">Méthode pour consulter les rubriques du cv:</h4>
+                        <li><img src="./images/icones/rocket.png"class="icons my-2">Ouvrir les modaux en cliquant dessus.</li>
+                        <li><img src="./images/icones/rocket.png"class="icons my-2">A l'aide des boutons à la fin de ceux-si, vous pouvez changer de modaux comme vous le souhaitez.</li>
+                    </ul>    
+                </div>    
+                <div class="col-10 col-md-2">    
+                    <ul class="light-color">
+                        <h4 class="ligth-color"> consignes de jeu(Développement en cours):</h4>
                         <li><img src="./images/icones/rocket.png"class="icons my-2">Sélectionnez l'astronaute avec la souris.</li>
                         <li><img src="./images/icones/rocket.png"class="icons my-2">Faites avancer horizontalement le personnage en dessous de la section que vous souhaitez consulter.</li>
                         <li><img src="./images/icones/rocket.png"class="icons my-2">Faites tirer une balle à l'astronaute sur la section désirée pour dévoiler son contenu.</li>
                     </ul>
-                </div>     
+                </div>      
             </div>  
         </section>
         <section class="margin-p">
             <div class="d-flex justify-content-around mx-0">
                 <div>
-                    <!-- Button modal Formation -->
-                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#formationModal">
+                    <!-- Button modal Formation --> 
+                    <button type="button" class="btn btn-secondary btn-collision" data-bs-toggle="modal" data-bs-target="#formationModal" id="button-formation">
                         Formation
                     </button>
                     <!-- Modalformation -->
@@ -116,7 +124,7 @@
                     </div>
                 </div>   
                 <!-- Button modal Compétences  -->
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#competencesModal">
+                    <button type="button" class="btn btn-dark btn-collision" data-bs-toggle="modal" data-bs-target="#competencesModal"id="button-competences">
                     Compétences
                     </button>
                 <!-- ModalCompétences -->
@@ -163,7 +171,7 @@
                     </div>
                 </div>
                  <!-- Button modal Expériences  -->
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#experiencesModal">
+                <button type="button" class="btn btn-danger  btn-collision" data-bs-toggle="modal" data-bs-target="#experiencesModal" id="button-experiences">
                     Expériences
                 </button> 
                 <!-- Modalexpériences -->
@@ -233,13 +241,13 @@
         <section class="margin-p">
             <div class="d-flex justify-content-around mx-0">
                 <!-- Button modal Portfolio -->
-                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                <button type="button" class="btn btn-info btn-collision" data-bs-toggle="modal" data-bs-target="#portfolioModal" id="button-portfolio">
                     Portfolio
                 </button>
                 <!-- ModalPortfolio -->
                 <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
-                        <div class="modal-content"  id="modal-portfolio-content">
+                        <div class="modal-content" id="modal-portfolio-content">
                             <div class="modal-header">
                                 <img src="./images/icones/portfolio.png" class="icons-1">
                                 <h3 class="modal-title" id="portfolioModalLabel">Portfolio</h3>
@@ -307,7 +315,7 @@
                     </div> 
                 </div>  
                 <!-- Button modal Me découvrir -->
-                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#contactModal">
+                <button type="button" class="btn btn-warning btn-collision" data-bs-toggle="modal" data-bs-target="#contactModal" id="button-decouvrir">
                     Me découvrir
                 </button>
                 <!-- ModalContact -->

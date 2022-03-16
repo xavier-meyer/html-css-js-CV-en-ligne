@@ -25,7 +25,7 @@ main img.icons{
     object-fit: cover;
     margin-right: 10px;
 }
-/*section2*/
+/* section2*/
 main img.icons-1{
     height: 50px;
     width: 50px;
@@ -81,9 +81,7 @@ color: var(--bs-body-bg);
 .w-40{
     width: 40%;
 }
-/*media-queries perso*/
-@media(max-width:392px){
-    main section h3.title-marge{
-        margin-right: 20px;
-    }
-}
+
+
+
+
